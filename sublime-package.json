@@ -3,10 +3,10 @@
     "settings": [
       {
         "file_patterns": [
-          "/LSP-sass.sublime-settings"
+          "/LSP-some-sass.sublime-settings"
         ],
         "schema": {
-          "$id": "sublime://settings/LSP-sass",
+          "$id": "sublime://settings/LSP-some-sass",
           "definitions": {
             "PluginConfig": {
               "properties": {
@@ -851,7 +851,7 @@
               "$ref": "sublime://settings/LSP-plugin-base"
             },
             {
-              "$ref": "sublime://settings/LSP-sass#/definitions/PluginConfig"
+              "$ref": "sublime://settings/LSP-some-sass#/definitions/PluginConfig"
             }
           ]
         }
@@ -866,8 +866,8 @@
               "properties": {
                 "LSP": {
                   "properties": {
-                    "LSP-sass": {
-                      "$ref": "sublime://settings/LSP-sass#/definitions/PluginConfig"
+                    "LSP-some-sass": {
+                      "$ref": "sublime://settings/LSP-some-sass#/definitions/PluginConfig"
                     }
                   }
                 }

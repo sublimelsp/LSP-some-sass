@@ -1,4 +1,4 @@
-# LSP-sass
+# LSP-some-sass
 
 Sass support for Sublime’s LSP.
 
@@ -6,7 +6,7 @@ Provided through [Some Sass language server](https://github.com/wkillerud/some-s
 
 ### Installation
 
-* Install [LSP](https://packagecontrol.io/packages/LSP) and `LSP-sass` via Package Control.
+* Install [LSP](https://packagecontrol.io/packages/LSP) and `LSP-some-sass` via Package Control.
 * Install [Sass syntax higlight package](https://packagecontrol.io/packages/Sass).
 * Restart Sublime.
 
@@ -14,8 +14,8 @@ Provided through [Some Sass language server](https://github.com/wkillerud/some-s
 
 There are some ways to configure the package and the language server.
 
-- From `Preferences > Package Settings > LSP > Servers > LSP-sass`
-- From the command palette `Preferences: LSP-sass Settings`
+- From `Preferences > Package Settings > LSP > Servers > LSP-some-sass`
+- From the command palette `Preferences: LSP-some-sass Settings`
 
 ### FAQ
 
@@ -23,12 +23,12 @@ There are some ways to configure the package and the language server.
 
 When working with Vue SFC, LSP-volar is usually used to provide LSP capabilities to every part of component.
 
-Since LSP-sass can be used to process `style[lang="scss"]` blocks in SFCs, CSS language features from LSP-volar
-will clash with LSP-sass since both are trying to provide information at the same time.
+Since LSP-some-sass can be used to process `style[lang="scss"]` blocks in SFCs, CSS language features from LSP-volar
+will clash with LSP-some-sass since both are trying to provide information at the same time.
 
-To resolve this, it’s best to disable certain LSP-volar CSS language features and let LSP-sass handle that.
+To resolve this, it’s best to disable certain LSP-volar CSS language features and let LSP-some-sass handle that.
 
-* In `LSP-sass.sublime-settings` set `selector` to handle Vue SFC:
+* In `LSP-some-sass.sublime-settings` set `selector` to handle Vue SFC:
 
 ```json
 {
