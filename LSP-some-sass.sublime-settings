@@ -1,5 +1,4 @@
 {
-	"command": ["${node_bin}", "${server_path}", "--stdio"],
 	"settings": {
 		"somesass.workspace.exclude": ["**/.git/**", "**/node_modules/**"],
 		"somesass.workspace.loadPaths": [],
@@ -142,5 +141,6 @@
 		"somesass.sass.workspaceSymbol.enabled": true,
 		"somesass.sass.customData": []
 	},
+	"command": ["${node_bin}", "${server_path}", "--stdio"],
 	"selector": "source.scss"
 }
