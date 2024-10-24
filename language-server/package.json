@@ -1,0 +1,7 @@
+{
+  "name": "some-sass",
+  "private": true,
+  "dependencies": {
+    "some-sass-language-server": "^2.0.2"
+  }
+}
