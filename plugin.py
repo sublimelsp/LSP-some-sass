@@ -69,7 +69,7 @@ class LspSassPlugin(NpmClientHandler):
                 point = position_to_offset(position, view)
                 view.sel().clear()
                 view.sel().add(point)
-                view.run_command('lsp_symbol_rename')
+                view.run_command('lsp_symbol_rename', {'session_name': LspSassPlugin.name()})
                 done_callback()
             # Trigger rename after a timeout to ensure didChange is sent to the server beforehand.
             sublime.set_timeout(trigger_rename)
