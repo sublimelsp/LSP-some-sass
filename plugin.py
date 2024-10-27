@@ -1,8 +1,8 @@
 from __future__ import annotations
-from LSP.plugin.core.views import position_to_offset
 from .utils import get_eol
 from LSP.plugin import Session, apply_text_edits
 from LSP.plugin.core.protocol import DocumentUri, ExecuteCommandParams, Position, TextEdit
+from LSP.plugin.core.views import position_to_offset
 from lsp_utils import NpmClientHandler
 from typing import Callable, Tuple, cast
 import os
