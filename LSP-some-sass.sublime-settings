@@ -142,5 +142,6 @@
 		"somesass.sass.customData": []
 	},
 	"command": ["${node_bin}", "${server_path}", "--stdio"],
-	"selector": "source.scss"
+	"selector": "source.scss",
+	"priority_selector": "source.scss",
 }
