@@ -253,6 +253,11 @@
                       "enum": ["ignore", "warning", "error"],
                       "type": "string"
                     },
+                    "somesass.scss.documentSymbols.enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable or disable document symbols."
+                    },
                     "somesass.scss.foldingRanges.enabled": {
                       "type": "boolean",
                       "default": true,
@@ -523,6 +528,11 @@
                       "enum": ["ignore", "warning", "error"],
                       "type": "string"
                     },
+                    "somesass.sass.documentSymbols.enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable or disable document symbols."
+                    },
                     "somesass.sass.foldingRanges.enabled": {
                       "type": "boolean",
                       "default": true,
@@ -772,6 +782,11 @@
                       "description": "Unknown at-rule.",
                       "enum": ["ignore", "warning", "error"],
                       "type": "string"
+                    },
+                    "somesass.css.documentSymbols.enabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Enable or disable document symbols."
                     },
                     "somesass.css.foldingRanges.enabled": {
                       "type": "boolean",
