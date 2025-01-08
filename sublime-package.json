@@ -32,6 +32,11 @@
                       "default": [],
                       "description": "A list of paths relative to the workspace root where the language server should look for stylesheets loaded by @use and @import. node_modules is always included. Note that you will have to configure your Sass compiler separately."
                     },
+                    "somesass.workspace.importAliases": {
+                      "type": "object",
+                      "default": {},
+                      "description": "A list of aliases where the language server should map for stylesheets loaded by @use and @import. Note that you will have to configure your Sass compiler separately."
+                    },
                     "somesass.workspace.logLevel": {
                       "type": "string",
                       "default": "info",
