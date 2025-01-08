@@ -2,6 +2,7 @@
 	"settings": {
 		"somesass.workspace.exclude": ["**/.git/**", "**/node_modules/**"],
 		"somesass.workspace.loadPaths": [],
+		"somesass.workspace.importAliases": {},
 		"somesass.workspace.logLevel": "info",
 		"somesass.css.codeAction.enabled": true,
 		"somesass.css.completion.enabled": true,
