@@ -35,7 +35,7 @@
                     "somesass.workspace.importAliases": {
                       "type": "object",
                       "default": {},
-                      "description": "A list of aliases where the language server should map for stylesheets loaded by @use and @import. Note that you will have to configure your Sass compiler separately. See https://github.com/wkillerud/some-sass/pull/346 for a usage example."
+                      "description": "A list of aliases where the language server should map for stylesheets loaded by @use and @import. Note that you will have to configure your Sass compiler separately. See https://github.com/wkillerud/some-sass/pull/346 and https://github.com/wkillerud/some-sass/tree/main/vscode-extension/test/e2e/import-aliases for a usage example."
                     },
                     "somesass.workspace.logLevel": {
                       "type": "string",
