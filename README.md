@@ -21,22 +21,30 @@ There are some ways to configure the package and the language server.
 
 ### Using with Vue SFC
 
-When working with Vue SFC, LSP-volar is usually used to provide LSP capabilities to every part of component.
+When working with Vue SFC, LSP-vue is usually used to provide LSP capabilities to every part of component.
 
-Since LSP-some-sass can be used to process `style[lang="scss"]` blocks in SFCs, CSS language features from LSP-volar
+Since LSP-some-sass can be used to process `style[lang="scss"]` blocks in SFCs, CSS language features from LSP-vue
 will clash with LSP-some-sass since both are trying to provide information at the same time.
 
-To resolve this, it’s best to disable certain LSP-volar CSS language features and let LSP-some-sass handle that.
+To resolve this, it’s best to disable certain LSP-vue CSS language features and let LSP-some-sass handle that.
 
-* In `LSP-some-sass.sublime-settings` set `selector` to handle Vue SFC:
+`LSP-some-sass.sublime-settings`
+
+* Set `selector` to handle Vue SFC
+* Disable default CSS completions and use only Some Sass completions; default CSS completions will come from LSP-vue
 
 ```json
 {
+	"settings": {
+		"somesass.scss.completion.css": false
+	},
 	"selector": "source.scss | text.html.vue"
 }
 ```
 
-* In `LSP-volar.sublime-settings` disable Sass features:
+`LSP-vue.sublime-settings`
+
+* Disable Sass features:
 
 ```json
 {
@@ -46,5 +54,3 @@ To resolve this, it’s best to disable certain LSP-volar CSS language features 
 	}
 }
 ```
-
-Beware that there are certain features that can’t be disabled currently (duplicate color provider references).
