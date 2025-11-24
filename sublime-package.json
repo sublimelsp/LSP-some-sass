@@ -73,7 +73,7 @@
                     "somesass.scss.completion.css": {
                       "type": "boolean",
                       "default": true,
-                      "description": "Include CSS completions."
+                      "description": "Enable or disable completions (IntelliSense) from the upstream VSCode CSS language services."
                     },
                     "somesass.scss.completion.includeFromCurrentDocument": {
                       "type": "boolean",
@@ -353,7 +353,7 @@
                     "somesass.sass.completion.css": {
                       "type": "boolean",
                       "default": true,
-                      "description": "Include CSS completions."
+                      "description": "Enable or disable completions (IntelliSense) from the upstream VSCode CSS language services."
                     },
                     "somesass.sass.completion.includeFromCurrentDocument": {
                       "type": "boolean",
@@ -628,7 +628,7 @@
                     "somesass.css.completion.css": {
                       "type": "boolean",
                       "default": true,
-                      "description": "Include CSS completions."
+                      "description": "Enable or disable completions (IntelliSense) from the upstream VSCode CSS language services."
                     },
                     "somesass.css.completion.includeFromCurrentDocument": {
                       "type": "boolean",
