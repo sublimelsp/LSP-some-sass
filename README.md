@@ -54,3 +54,5 @@ To resolve this, it’s best to disable certain LSP-vue CSS language features an
 	}
 }
 ```
+
+Beware that there are certain features that can’t be disabled currently (duplicate color provider references).
