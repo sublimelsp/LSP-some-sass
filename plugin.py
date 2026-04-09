@@ -1,11 +1,11 @@
 from __future__ import annotations
 
 from .utils import get_eol
-from LSP.plugin import apply_text_edits, Session
+from LSP.plugin import Session, apply_text_edits
 from LSP.plugin.core.views import position_to_offset
 from LSP.protocol import DocumentUri, ExecuteCommandParams, Position, TextEdit
 from lsp_utils import NpmClientHandler
-from typing import Callable, cast, Tuple
+from typing import Callable, Tuple, cast
 import os
 import sublime
 

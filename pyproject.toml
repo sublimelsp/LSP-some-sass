@@ -14,5 +14,4 @@ select = ["F401", "I"]
 case-sensitive = false
 from-first = true
 no-sections = true
-order-by-type = false
 required-imports = ["from __future__ import annotations"]
