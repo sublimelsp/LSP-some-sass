@@ -1,8 +1,9 @@
 from __future__ import annotations
+
 from .utils import get_eol
 from LSP.plugin import Session, apply_text_edits
-from LSP.plugin.core.protocol import DocumentUri, ExecuteCommandParams, Position, TextEdit
 from LSP.plugin.core.views import position_to_offset
+from LSP.protocol import DocumentUri, ExecuteCommandParams, Position, TextEdit
 from lsp_utils import NpmClientHandler
 from typing import Callable, Tuple, cast
 import os
@@ -20,7 +21,7 @@ def plugin_unloaded():
 
 
 class LspSassPlugin(NpmClientHandler):
-    package_name = __package__
+    package_name = str(__package__)
     server_directory = 'language-server'
     server_binary_path = os.path.join(server_directory, 'node_modules', 'some-sass-language-server', 'bin', 'some-sass-language-server')
 
