@@ -2,8 +2,7 @@ from __future__ import annotations
 
 from .utils import get_eol
 from functools import partial
-from LSP.plugin import LspPlugin, OnPreStartContext, Promise, apply_text_edits, command_handler
-from LSP.plugin.core.views import position_to_offset
+from LSP.plugin import LspPlugin, OnPreStartContext, Promise, apply_text_edits, command_handler, position_to_offset
 from LSP.protocol import DocumentUri, LSPAny, Position, TextEdit
 from lsp_utils import NodeManager
 from pathlib import Path
@@ -60,7 +59,7 @@ class LspSassPlugin(LspPlugin):
                             'line': text_edit['range']['start']['line'] + len(lines) - 1,
                             'character': max(usage_keyword_positions) + 1,
                         }
-                        point = position_to_offset(position, view)
+                        point = position_to_offset(view, position)
                         view.sel().clear()
                         view.sel().add(point)
                         view.run_command('lsp_symbol_rename', {'session_name': self.plugin_storage_path.name})
