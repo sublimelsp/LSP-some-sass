@@ -13,4 +13,4 @@ jobs:
     with:
       # Provides the SCSS syntax, which Sublime Text doesn't include.
       extra-packages: |
-        SublimeText/Sass
+        Sass
